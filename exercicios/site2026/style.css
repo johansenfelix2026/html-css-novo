@@ -1,0 +1,132 @@
+@charset "UTH-8";
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: azure;
+}
+
+header {
+
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 1px 1px 20px 5px rgb(185, 192, 199);
+}
+
+
+nav a {
+
+    color: chartreuse;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: aqua;
+}
+
+.conteudo-principal {
+
+    display: flex;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 20px;
+    gap: 20px;
+
+}
+
+.linha-vertical:not(:last-child)::after {
+
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 16px;
+    background-color: chartreuse;
+    margin-left: 15px;
+}
+
+section {
+
+    flex: 3;
+}
+
+article {
+
+    background-color: antiquewhite;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px 10PX 20PX 30PX;
+    box-shadow: 0 2px 5px rgb(193, 214, 219);
+
+}
+
+aside {
+
+    flex: 1;
+    background-color: cornsilk;
+    border-radius: 5px;
+    padding: 16px;
+    height: fit-content;
+
+}
+
+aside ul {
+    padding-left: 20px;
+
+}
+
+aside a {
+    text-decoration: none;
+}
+
+aside a:hover {
+    text-decoration: underline;
+    color: brown;
+}
+
+footer {
+    background-color: #111;
+    color: chartreuse;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+}
+
+footer:hover {
+
+    color: cyan;
+    font-weight: bold;
+}
+
+footer>p {
+
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    /* Força os filhos a ficarem lado a lado */
+    gap: 15px;
+    /* Cria um espaçamento entre eles */
+}
+
+.quadrado {
+    width: 100px;
+    /* Largura */
+    height: 100px;
+    margin: 10px;
+    /* Altura */
+}
+
+.um {
+    background-color: blueviolet;
+    /* Cor do primeiro */
+}
+
+.dois {
+    background-color: maroon;
+    /* Cor do segundo */
+}

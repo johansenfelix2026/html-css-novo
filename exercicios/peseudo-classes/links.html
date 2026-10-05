@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /*  SELETORES PERSONALIZADOS
+
+        #    = ID
+        .    = CLASSE
+        :    = PSEUDO-CLASSE
+        ::   = PSEUDO-ELEMENT
+        >    = CHILDREN O FILHOS*/
+
+
+
+
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a{
+
+    color: rgb(34, 33, 33);
+    text-decoration: none;
+    
+}
+#link{
+
+    text-align: center;
+}
+
+a:visited {
+    color: rgb(40, 40, 43);
+}
+
+a:hover {
+
+    background-color: rgb(118, 230, 250);
+    display: block;
+    width: 300px;
+    height: 100px;  
+    text-decoration: underline;  
+
+    
+}
+
+
+a:active {
+
+    color: rgb(255, 0, 34);
+}
+
+a:focus {
+
+    color:darkorange
+}
+.especial::before { 
+    content: '⇒';
+}
+
+.especial::after{
+    content: '←';
+}
+.especial:hover { 
+    background-color: blueviolet;
+}
+
+    </style>
+</head>
+<body>
+    
+<h1>Personalizando links</h1>
+<ul>  
+    
+    <li id="link"><a href="https://www.facebook.com/papajonhart?locale=pt_BR" target="_blank" >Visite meu perfil no facebook</a></li>
+    <li><a href="https://www.instagram.com/jonh_art2026/" target="_blank">Visite meu instagram</a></li>
+    <li><a href="https://web.whatsapp.com/" target="_blank" class="especial">Fale comigo pelo whatsapp</a></li>
+
+
+
+
+
+</ul>
+</body>
+</html>

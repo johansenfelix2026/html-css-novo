@@ -1,0 +1,82 @@
+/* Configurações Gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* HEADER */
+header {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* NAV */
+nav {
+    margin-top: 15px;
+}
+nav a {
+    color: #ff9900;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+nav a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+/* MAIN (Usa Flexbox para colocar a Section e o Aside lado a lado) */
+.conteudo-principal {
+    display: flex;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 20px;
+    gap: 20px; /* Espaço entre o conteúdo e a barra lateral */
+}
+
+/* SECTION */
+section {
+    flex: 3; /* Ocupa 3 partes do espaço disponível */
+}
+
+/* ARTICLE */
+article {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* ASIDE (Barra Lateral) */
+aside {
+    flex: 1; /* Ocupa 1 parte do espaço disponível */
+    background-color: #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    height: fit-content;
+}
+aside ul {
+    padding-left: 20px;
+}
+aside a {
+    color: #333;
+    text-decoration: none;
+}
+aside a:hover {
+    color: #ff9900;
+    text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+}

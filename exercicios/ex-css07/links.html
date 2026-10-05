@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /*  SELETORES PERSONALIZADOS
+
+        #    = ID
+        .    = CLASSE
+        :    = PSEUDO-CLASSE
+        ::   = PSEUDO-ELEMENT
+        >    = CHILDREN O FILHOS
+
+        */
+
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+
+        h1 {
+            padding: 20px;
+        }
+
+        li {
+            font-size: 20px;
+            padding: 2px;
+        }
+
+        /* A PARTIR DAQUI VEREMOS ALGUNS PSEUDOS CLASSES QUE SÃO "DOIS : PONTOS"  DEPOIS DA DECLARAÇÃO*/
+        a {
+            color: crimson;
+            text-decoration: none;
+            /*retira o sublinhado de links*/
+            font-weight: bold;
+        }
+
+        a:visited {
+            /* cor do link que já foi visitado*/
+            color: darkblue;
+        }
+
+        a:hover {
+            /* se passar o mouse sobre aparece um sublinhando*/
+            text-decoration: underline;
+            /* mostrar sublinhado oculto*/
+            color: black;
+        }
+
+
+        a:active {
+            /* esse comando especifica que se clicar no link e segurar fica com a cor verde*/
+            color: chartreuse;
+        }
+
+        /* A PARTIR DAQUI VEREMOS ALGUNS PSEUDOS ELEMENTOS QUE SÃO "QUATRO :: PONTOS OU 2X DOIS PONTOS"  DEPOIS DA DECLARAÇÃO*/
+
+        .especial{
+
+            background-color: rgb(68, 223, 7);
+        }
+
+            
+        
+        .especial{
+
+        background-color: gold;
+        }
+
+
+
+        a::after {
+            content: '⇐';
+            text-decoration: none;
+            font-weight: normal;
+            color: rgb(105, 105, 105);
+        }
+
+        .especial::before {
+
+            content: '⇒';
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li type="circle"><a href="https://www.instagram.com/jonh_art2026/" target="_blank" rel="external">meu
+                instagram</a></li>
+        <li type="square"><a href="https://www.facebook.com/papajonhart/?locale=pt_BR" target="_blank"
+                rel="external">meu facebook</a></li>
+        <li type="disc"><a href="https://web.whatsapp.com/" target="_blank" rel="external" class="especial">meu
+                whatsapp</a></li>
+    </ul>
+
+</body>
+
+</html>

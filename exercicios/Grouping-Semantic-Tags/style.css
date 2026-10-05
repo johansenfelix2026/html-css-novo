@@ -1,0 +1,93 @@
+@charset "UTH-8";
+body{
+
+    font-family: Arial, Helvetica, sans-serif;
+    
+    background-color: rgb(241, 239, 235);
+}
+header{
+
+    background-color: black;
+    color: rgb(255, 255, 254);
+    text-align: center;
+    padding: 20px 0; /* distância entre o inicio da janela e a caixa preta de cima e depois da caixa preta na abaixo */
+}
+nav{
+
+    margin-top: 15px;
+}
+nav a{
+
+    color: #ff7f50;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bolder;
+}
+nav a:hover {
+
+    text-decoration: underline;
+    color: aliceblue;
+    
+}
+
+.conteudo-principal { 
+    display: flex;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 20px;
+    gap: 20px;
+
+
+}
+
+.linha-vertical:not(:last-child)::after /*Significa "que NÃO seja o último filho". Ele olha para a lista de links e remove o item "Contato" da seleção, porque "Contato" é o último. Se não usássemos isso, haveria uma barra vertical flutuando sozinha depois de "Contato".*/
+ {
+      content: "";
+      display: inline-block;
+      width: 2px;
+      height: 16px; /* Altura da barra vertical */
+      background-color: #ff7f50; /* Mesma cor do texto */
+      margin-left: 15px; /* Afasta a barra do texto do próprio item */
+    }
+section{
+
+    flex: 3;
+}
+article{
+
+    background-color: antiquewhite;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px rgb(182, 175, 175);
+}
+article > p:hover{
+
+
+    text-decoration: underline;
+    color: darkmagenta;
+    
+}
+
+article > a:hover{
+    display: block;
+
+
+    background-color: burlywood;
+    width: 100px;
+    height: 500px;
+}
+
+aside{
+
+ flex: 1;
+ background-color: rgb(206, 206, 206);
+ padding: 20px;
+ border-radius: 5px;
+ box-shadow: 0 1px 1px rgb(226, 221, 221);
+ height: fit-content;
+ 
+}
+    
+
+    

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos de hover</title>
+    <style>
+        body {
+            font: 1em sans-serif;
+        }
+
+        div > p { /*ESSE AQUI ESCONDE O TEXTO DENTRO DO PARAGRAFO DENTRO DA DIV*/
+            display: none;
+        }
+
+        div:hover > p { /* ESSE AQUI MOSTRA O TEXTO ESCONDIDO PELO COMANDO " DIV > P" */
+            display: block;
+            color: black;
+            background-color: aqua;
+            width: 200px;
+            height: 200px;
+
+        
+        }
+
+        div:hover { /* ESSE AQUI É AS CONFIGURAÇÕES GERAIS DA DIV PELO COMANDO HOVER QUE É QUANDO PASSAR O MOUSE SOBRE*/
+            color: blueviolet;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Exemplos de hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>Passe o mouse aqui <!-- A DIV PERSONALIZADA NO CSS LOCAL-->
+        <p>Texto escondido.... <br>texto escondido...<br>texto escondido...<br>texto escondido...<br>texto escondido...</p> <!-- O PARAGRAFO FILHO DA DIV COM TEXTO ESCONDIDO-->
+    </div>
+    <p >Fim do exemplo</p> <!--PARAGRAFO FORA DA DIV-->
+
+</body>
+
+</html>

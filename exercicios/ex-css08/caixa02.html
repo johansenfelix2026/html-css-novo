@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        header {
+            background-color: bisque;
+            width: 300px;
+            height: 100px;
+            padding: 10px;
+            margin: 10px;
+            
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        article > h2{
+            text-align: center;
+
+            background-color: chartreuse;
+            
+        }
+
+        article > p{
+
+            text-align: justify;
+        }
+
+
+        nav {
+
+            background-color: rgb(70, 69, 69);
+            padding: 3px;
+        }
+
+
+        nav > a{
+
+        text-decoration: none;
+        color: aliceblue;
+        font-weight: bold;
+        margin-right: 20px;
+        }
+
+        nav > a:hover{
+
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: antiquewhite;
+            width: 300px;
+            height: 200px;
+            padding: 10px;
+            margin: 10px;
+
+        }
+
+        article > aside {
+            background-color: burlywood;
+        }
+
+        article {
+
+            background-color: azure;
+            padding: 5px;
+        }
+        
+        aside > p{
+            text-align: center;
+            margin-top: 30px;
+            padding: 5px;
+        }
+
+        footer {
+
+            background-color: rgb(7, 7, 7);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 15px;
+
+            padding: 5px;
+            margin-top: 50px;
+            margin-inline: 20px;
+
+            text-align: center;
+            color: antiquewhite;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">links</a>
+            <a href="#">links</a>
+            <a href="#">links</a>
+            <a href="#">links</a>
+            <a href="#">links</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Mundo do JiuJitsu</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit necessitatibus laboriosam eaque
+                    officiis natus, neque ullam rem distinctio cum quidem dolorem vero, velit voluptatibus sed nisi at?
+                    Illum, nam aliquam!</p>
+                <aside>
+                    <p> Artigo escrito por PapaJonh</p>
+                </aside>
+
+            </article>
+            <article>
+
+            </article>
+
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Papajoh_art</p>
+    </footer>
+
+</body>
+
+</html>

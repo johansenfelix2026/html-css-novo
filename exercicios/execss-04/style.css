@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+* {
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /*height: 100%;*/
+}
+
+body{
+
+    background-image: linear-gradient( to right, #C7B89C, #DDDDCF,#DBCEC3);
+}
+main{/* parte branca " caixa" onde esta o texto do site*/
+    border-radius: 10px; /* arrendodamento das bordas da parte branca*/
+    box-shadow: 5px 5px 5px #dbcec385;
+
+    background-color: white;
+    width: 600px; /* largura da caixa pois ele cria uma caixa com a cor do back*/
+    padding: 10px; /* espaço entre a fonte a borda da caixa criada */
+margin: auto; /* deixa centralizado no meio da tela tudo que está dentro do main*/
+
+h1{
+
+    color: #7A4E47;
+    text-align: center;
+    text-shadow: 1px 1px 2px #B98E61;
+}
+
+h2{
+    color: #B98E61;
+}
+
+
+
+}
+
+
+
+
+p{
+    text-align: justify;
+} 

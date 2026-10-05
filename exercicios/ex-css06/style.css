@@ -1,0 +1,43 @@
+@charset "UTF-8";
+body{
+
+    background-color: rgb(206, 255, 157);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+    /* o que em HTML é ID = em CSS é # "hastag" = so pode 1 elemento
+      o que em  HTML é CLASS = em CSS é . "ponto"  = pode vários */
+    h1{
+        color: rgb(48, 92, 4);
+        text-align: center;
+    }
+
+    h1#Principal{
+         font-size: 35px;
+         color: rgb(78, 40, 128);
+         background-color: beige;
+    }
+    h2{
+
+        color: rgb(9, 170, 35);
+        text-align: center;
+    }
+    p{
+        text-align:center;
+    }
+
+    .basico{
+        color: blue;
+      
+    }
+    .intermediario{
+        color: blueviolet;
+    }
+    .avancado{
+        color: brown;
+    }
+
+    .destaque{
+        background-color:aqua;
+    }
+}

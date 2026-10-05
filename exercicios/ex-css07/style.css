@@ -1,0 +1,35 @@
+
+
+
+
+
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+div > p {/* essa "DIV > P" quer dizer que o parágrafo filho que está dentro da DIV ficará escondido ou oculto!*/
+    display: none; /* esse comando quer dizer que " NÃO É PARA MOSTRAR NADA! */
+}
+
+}
+
+div:hover > p { /* esse comando aqui quer dizer que quando passar o mouse em cima do texto dentro do paragráfo de detro da DIV no HTML */
+    display: block; /* esse comando mostrará o texto escondido*/
+    color: rgb(187, 255, 0);
+    background-color: brown;
+    width: 500px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+div:hover > h1 {
+
+    background-color: rgb(0, 255, 242);
+
+    
+}
+
+div:hover{
+
+    color: rgb(27, 0, 11);
+    }

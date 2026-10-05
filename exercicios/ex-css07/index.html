@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo classes</title>
+    <style>
+        div {
+            display:inline-block; /* TUDO NA MESMA LINHA OU SEJA , TUDO NA HORIZONTAL UM AO LADO OD OUTRO*/
+            background-color: antiquewhite; /*COR DA CAIXa*/
+            text-align: center;
+            border: 1px solid black;
+            border-radius: 10px; /*BORDA DA CAIXA*/
+            width: 200px; /* LARGURA*/
+            height: 200px; /* ALTURA*/
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+            
+            }
+
+        div::after{
+                content: '®';}
+        /* essa DIV: pseudo classe está relacionado ao estado de cada elemento EX: DIV:ACTIVE = ativa ou DIV:DISABLE = habilitado ou DIV:EMPTY = vazio*/ 
+    
+             div:hover{ /* hover é passando  o mouse sobre a  caixa fica verde ou com a cor ou alguma configuração aplicada*/
+                background-color: chartreuse;
+             }
+       
+    </style>
+</head>
+
+<body> <!--VAMOS DAR ID PARA CADA UMA DAS DIVS-->
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+
+</body>
+
+</html>

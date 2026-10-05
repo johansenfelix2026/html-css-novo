@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes como: <br> cpu, tablet, celulares ou notebook</p>
+    <picture> 
+        <source media="(max-width:750px )" srcset="imagens/pequena.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/media.png" type="image/png">
+         <img src="Imagens/grande.png" alt="imagem flexível"> <!--SEGUIR A ORDEM IMAGEM G,M e P. ESSA AQUI É A PRIMEIRA O RESTANTE SEMPRE VAI EM CIMA COM SOURCE NA FRENE-->
+        </picture>
+        
+        <h1>Reproduzindo áudio</h1>
+        <p>Vamos apredender a reproduzir áudios em HTML5</p><!--primeira forma-->
+        <audio src="midia/musica-agua-de-bar.mp3.mp3" autoplay controls loop>musica-agua-de-bar</audio><br>
+
+        <audio preload="metada" autoplay controls loop> <!--segunda forma-->
+            <source src="midia/musica-agua-de-bar.mp3.mp3" type="audio/mpeg">
+            <p>Caso seu navegador não reproduza áudio, tem essa mensagem: Infelizmente sau navegador não reproduz áudio <a href="midia/musica-agua-de-bar.mp3.mp3"> Clique aqui para baixar o arquivo mp3</a></p>
+        </audio>
+</body>
+</html>

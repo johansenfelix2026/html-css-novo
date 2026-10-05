@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+
+<body>
+    <H1>Trabalhando com links externos</H1>
+    <p>Você pode acessar meu <a href="https://www.facebook.com/papajonhart?locale=pt_BR" rel="next">facebook por aqui</a></p> <!--ESSE AQUI SAI DA PAGINA PARA ACESSAR O SITE-->
+    <p>Você pode acessar meu <a href="https://www.facebook.com/papajonhart?locale=pt_BR" target="_blank" rel="nofollow"
+            rel="external">facebook por aqui</a></p><!--ESSE AQUI ABRE UMA NOVA ABA/JANELA-->
+    <p>Acesse a minha <a href="pag002.html" rel="next" target="_self">segunda página por aqui</a></p>
+    <h1>Trabalhando com links internos" da mesma página"</h1>
+    <p>Acesse minha segunda página interna. <a href="pag002.html" rel="next" target="_self">Sem abrir nova aba</a>
+    <p>Acesse minha segunda página interna. <a href="pag002.html" target="_blank" rel="external">Sem abrir nova aba</a>
+    <h1>Links para download</h1>
+    <ul>
+        <li><a href="Livro/pastoral_aula01.pdf" download="pastoral_aula01.pdf" type="application/pdf"
+                target="_blank">Baixar livro em pdf</a></li>
+        <li><a href="livros/pastoral_aula01.pdf" download>Baixar Aula 01</a></li>
+        <li><a href="livros/pastoral_aula01.pdf" download>Baixar Aula 01</a></li>
+        <li><a href="Livro/pastoral_aula01.zip" download="pastoral_aula01.zip" type="application/zip">Livro compactado
+                em zip</a></li>
+        <li><a href="Livro/pastoral_aula01.zip" download>Baixar livro em ZIP</a></li>
+        <li><a href="Livro/IMG_20230630_215536767_BURST001_AI.jpg " download> baixar minha foto</a></li>
+        <li><a href="Livro/IMG_20230630_215536767_BURST001_AI.zip" download> baixar minha foto</a></li>
+    </ul>
+     <h2>Lista de Aulas para Download</h2>
+
+    <!-- <ul> cria uma Lista Não Ordenada (com marcadores de bolinha) -->
+    <ul>
+        <!-- Cada <li> é um item da sua lista -->
+        <li>
+            <a href="Livro/pastoral_aula01.zip" download>
+                <i class="fa-solid fa-file-arrow-down"></i> Baixar Aula 01 (ZIP)
+            </a>
+        </li>
+        
+        <li>
+            <a href="Livro/pastoral_aula02.zip" download>
+                <i class="fa-solid fa-file-arrow-down"></i> Baixar Aula 02 (ZIP)
+            </a>
+        </li>
+
+        <li>
+            <a href="Livro/pastoral_aula03.zip" download>
+                <i class="fa-solid fa-file-arrow-down"></i> Baixar Aula 03 (ZIP)
+            </a>
+        </li>
+    </ul>
+
+
+
+</body>
+
+</html>
