@@ -6,27 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alinhamento vertical</title>
     <style>
-        #container{
-            background-image: url('imagens/target001.png');
-            background-size: 100% 100%;
-            position: relative;
+       #container{
+        position: relative;
+        background-image: url('imagens/target001.png');
+        background-size: 100%;
+        background-position: center center;
+        background-color: purple;
+        height: 96vh;
+        padding: 20px;
+        
+       }
+       #conteudo{
+        position: absolute;
+         background-image: url('imagens/target001.png');
+           background-size: 100%;
+           background-position: center;
+         
           
-            background-color: purple;
-            height: 96vh;
-            padding: 20px;
-        }
-        #conteudo{
-             background-image: url('imagens/target001.png');
-            background-size: 100% 100%;
-            position: absolute;
-            background-color: yellowgreen;
-            height: 200px;
-            width: 500px;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
+        background-color: yellow;
+        height: 200px;
+        width: 400px;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
 
+       }
     </style>
     
 </head>

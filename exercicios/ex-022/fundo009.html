@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo de codigo de alinhamento 02</title>
+        <style>
+            /* 1. O PAI COMANDA TODO O ALINHAMENTO COM APENAS 2 LINHAS */
+#container{
+    display: grid;
+    place-items: center; /* Centraliza na vertical E na horizontal ao mesmo tempo! */
+    background-color: purple;
+  background-image: url('imagens/target001.png');
+  background-size: 100%;
+  background-position: center center;
+  height: 96vh;
+  padding: 20px;
+
+
+
+/* 2. O FILHO NÃO PRECISA DE NENHUM CÓDIGO DE POSICIONAMENTO */
+}
+#conteudo{
+    background-color: yellow;
+    background-image: url('imagens/target001.png');
+    background-size: 100%;
+  background-position: center center;
+
+    height: 200px;
+    width: 400px;
+
+
+}
+
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+    
+</body>
+</html>

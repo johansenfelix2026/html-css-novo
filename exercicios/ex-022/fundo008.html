@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo de codigo de alinhamento</title>
+    <style>
+        /* 1. TODO O TRABALHO DE ALINHAMENTO É FEITO AQUI NO PAI */
+#container{
+    display: flex;
+
+    justify-content: center;/* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    background-color: purple;
+  background-image: url('imagens/target001.png');
+  background-size: 100%;
+  background-position: center center;
+  height: 96vh;
+  padding: 20px;
+
+
+
+
+}
+/* 2. O FILHO FICA APENAS COM AS SUAS PRÓPRIAS MEDIDAS E CORES */
+#conteudo{
+    background-color: yellow;
+    background-image: url('imagens/target001.png');
+    background-size: 100%;
+  background-position: center center;
+
+    height: 200px;
+    width: 400px;
+
+/* Não precisa de nenhuma propriedade de posição aqui! */
+}
+
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+    
+</body>
+</html>
