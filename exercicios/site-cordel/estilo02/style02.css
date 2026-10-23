@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+/* Configurações Globais */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body { 
+    min-height: 100vh;
+    background-color: aliceblue;
+    /* Adicionada uma fonte padrão mais elegante para leitura de poemas */
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+/* Cabeçalho */
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-size: 2.5rem; /* Ajuste no tamanho do título */
+}
+
+header > p {
+    padding-bottom: 50px;
+    padding-top: 10px;
+}
+
+/* Links Globais e Estados */
+a {
+    color: black;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+/* --- SECÇÕES DO POEMA --- */
+
+/* Estilo Base Comum para todas as seções (Evita repetição de código) */
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    font-size: 1.3rem; /* Tamanho confortável para ler os versos */
+    line-height: 2rem; /* Espaçamento entre as linhas do poema */
+}
+
+section > p {
+    max-width: 500px; /* Limita a largura para o poema não ficar "esticado" */
+    margin: auto;     /* Centraliza o bloco de texto na tela */
+    padding-left: 20px;
+}
+
+/* Secção Normal */
+.normal {
+    background-color: white; /* Contraste sutil com o fundo aliceblue do body */
+    color: black;
+}
+
+/* Secção de Imagem (Onde o efeito especial do Cordel acontece) */
+.imagem {
+    background-color: #333333; /* Fundo escuro temporário caso a imagem falhe */
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Sombra para o texto não sumir no fundo */
+    
+    /* Ative estas linhas quando escolher as suas imagens de fundo: */
+    /* background-image: url('../imagens/seu-fundo.jpg'); */
+    /* background-position: center center; */
+    /* background-size: cover; */
+    /* background-attachment: fixed; */ /* Cria o efeito Parallax clássico deste desafio */
+}
+
+/* Rodapé */
+footer {
+    background-color: black;
+    text-align: center;
+    color: aliceblue;
+    padding: 15px;
+}
+
+/* 
+🛠️ O que foi melhorado:
+
+1. Centralização do Poema: Adicionei max-width: 500px e margin: auto nas tags <p> dentro das secções. Sem isso, os versos do cordel ficariam encostados na lateral esquerda do ecrã em monitores grandes.
+2. Espaçamento (padding e line-height): Dei mais "ar" ao poema com line-height, simulando a leitura de um livro ou folheto real.
+3. Criação da classe .imagem: Deixei a estrutura pronta para aplicar as imagens de fundo com o efeito background-attachment: fixed (que faz o texto rolar por cima da imagem estática).
+Deseja ajuda para adicionar as imagens de fundo na classe .imagem ou prefere ajustar primeiro o estilo e o tamanho das fontes dos versos?
+/*

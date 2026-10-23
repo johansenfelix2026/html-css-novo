@@ -7,7 +7,7 @@
 
 }
 html, body{ min-height: 100vh;
-background-color: aliceblue;
+background-color: rgb(214, 214, 214);
 }
 
 header {
@@ -50,6 +50,31 @@ a {
     
     
 }
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height:2rem;
+    padding-left: 30px;
+
+
+
+}
+section.normal {
+    background-color: aliceblue;
+    color: black;
+}
+section.imagem {
+
+    background-color: rgb(59, 59, 59);
+    color: aliceblue;
+}
+section.imagem > p {
+    
+    background-color: rgb(44, 43, 43);
+    width: 400px;
+}
+
 footer {
 
     background-color: black;
