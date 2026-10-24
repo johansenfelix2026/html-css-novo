@@ -5,9 +5,16 @@
 
 :root {
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
-    --fonte2: "Roboto", sans-serif;    /* para titulo*/
-    --fonte3: "Sriracha", cursive;    /* para conteudo*/
-    --fonte4: "Archivo Black", sans-serif;    /* para titulo*/
+    --fonte2: "Roboto", sans-serif;
+    /* para titulo*/
+    --fonte3: "Sriracha", cursive;
+    /* para conteudo*/
+    --fonte4: "Archivo Black", sans-serif;
+    /* para titulo*/
+    --tamanho-texto: clamp(1rem, 3vw, 1.25rem);    /* ~16px a 18px */
+    --tamanho-subtitulo: clamp(1.25rem, 4vw, 1.75rem);    /* ~20px a 28px */
+    --tamanho-titulo: clamp(1.75rem, 6vw, 3rem);    /* ~28px a 48px */
+
 
 
 }
@@ -20,7 +27,8 @@
 
 }
 
-html,body {
+html,
+body {
     font-family: var(--fonte1);
     min-height: 100vh;
     background-color: rgb(214, 214, 214);
@@ -38,16 +46,16 @@ header>h1 {
     padding-top: 50px;
     font-variant: small-caps;
     font-family: var(--fonte4);
-    font-size: 2.5em;
+    font-size:var(--tamanho-titulo);
 
 
 
 }
 
-header > p {
+header>p {
 
     padding-bottom: 50px;
-    
+
 }
 
 header a,
@@ -80,7 +88,7 @@ section {
     line-height: 2rem;
     padding-left: 30px;
     font-family: var(--fonte3);
-    font-size: 1.2em;
+    font-size:var(--tamanho-texto);
 
 
 
