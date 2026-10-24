@@ -1,13 +1,29 @@
 @charset "UTF-8";
 
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sriracha&display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: "Roboto", sans-serif;    /* para titulo*/
+    --fonte3: "Sriracha", cursive;    /* para conteudo*/
+    --fonte4: "Archivo Black", sans-serif;    /* para titulo*/
+
+
+}
+
+
 * {
 
     margin: 0px;
     padding: 0px;
 
 }
-html, body{ min-height: 100vh;
-background-color: rgb(214, 214, 214);
+
+html,body {
+    font-family: var(--fonte1);
+    min-height: 100vh;
+    background-color: rgb(214, 214, 214);
 }
 
 header {
@@ -17,11 +33,13 @@ header {
     text-align: center;
 }
 
-header > h1 {
+header>h1 {
 
     padding-top: 50px;
     font-variant: small-caps;
-     
+    font-family: var(--fonte4);
+    font-size: 2.5em;
+
 
 
 }
@@ -29,48 +47,58 @@ header > h1 {
 header > p {
 
     padding-bottom: 50px;
+    
 }
- header a, footer a {
+
+header a,
+footer a {
 
     color: white;
     text-decoration: none;
     font-weight: bolder;
-    
+
 }
-header a:hover, footer a:hover  {
+
+header a:hover,
+footer a:hover {
 
     text-decoration: underline;
 }
 
 a {
 
-    color:black;
+    color: black;
     text-decoration: none;
     font-weight: bolder;
-    
-    
+
+
 }
 
-section{
+section {
     padding-top: 10vh;
     padding-bottom: 10vh;
-    line-height:2rem;
+    line-height: 2rem;
     padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 1.2em;
 
 
 
 }
+
 section.normal {
     background-color: aliceblue;
     color: black;
 }
+
 section.imagem {
 
     background-color: rgb(59, 59, 59);
     color: aliceblue;
 }
-section.imagem > p {
-    
+
+section.imagem>p {
+
     background-color: rgb(44, 43, 43);
     width: 400px;
 }
@@ -82,4 +110,3 @@ footer {
     color: aliceblue;
     padding: 10px;
 }
-

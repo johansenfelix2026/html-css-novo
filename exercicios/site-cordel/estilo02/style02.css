@@ -10,8 +10,7 @@ html, body {
     min-height: 100vh;
     background-color: aliceblue;
     /* Adicionada uma fonte padrão mais elegante para leitura de poemas */
-    font-family: Arial, Helvetica, sans-serif; 
-}
+    }
 
 /* Cabeçalho */
 header {
@@ -95,8 +94,7 @@ footer {
     padding: 15px;
 }
 
-/* 
-🛠️ O que foi melhorado:
+/*  O que foi melhorado:
 
 1. Centralização do Poema: Adicionei max-width: 500px e margin: auto nas tags <p> dentro das secções. Sem isso, os versos do cordel ficariam encostados na lateral esquerda do ecrã em monitores grandes.
 2. Espaçamento (padding e line-height): Dei mais "ar" ao poema com line-height, simulando a leitura de um livro ou folheto real.
