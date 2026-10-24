@@ -5,12 +5,13 @@
 
 :root {
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
-    --fonte2: "Roboto", sans-serif;
-    /* para titulo*/
-    --fonte3: "Sriracha", cursive;
-    /* para conteudo*/
-    --fonte4: "Archivo Black", sans-serif;
-    /* para titulo*/
+    --fonte2: "Roboto", sans-serif;    /* para titulo*/
+    --fonte3: "Sriracha", cursive;    /* para conteudo*/
+    --fonte4: "Archivo Black", sans-serif;    /* para titulo*/
+
+    /* O clamp funciona assim: clamp(TAMANHO_MÍNIMO, TAMANHO_FLUIDO, TAMANHO_MÁXIMO) */
+
+
     --tamanho-texto: clamp(1rem, 3vw, 1.25rem);    /* ~16px a 18px */
     --tamanho-subtitulo: clamp(1.25rem, 4vw, 1.75rem);    /* ~20px a 28px */
     --tamanho-titulo: clamp(1.75rem, 6vw, 3rem);    /* ~28px a 48px */
@@ -106,9 +107,10 @@ section.imagem {
 }
 
 section.imagem>p {
+    display: inline-block;
 
     background-color: rgb(44, 43, 43);
-    width: 400px;
+  
 }
 
 footer {
