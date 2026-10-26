@@ -5,20 +5,23 @@
 
 :root {
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
-    --fonte2: "Roboto", sans-serif;    /* para titulo*/
-    --fonte3: "Sriracha", cursive;    /* para conteudo*/
-    --fonte4: "Archivo Black", sans-serif;    /* para titulo*/
+    --fonte2: "Roboto", sans-serif;
+    /* para titulo*/
+    --fonte3: "Sriracha", cursive;
+    /* para conteudo*/
+    --fonte4: "Archivo Black", sans-serif;
+    /* para titulo*/
 
     /* O clamp funciona assim: clamp(TAMANHO_MÍNIMO, TAMANHO_FLUIDO, TAMANHO_MÁXIMO) */
 
 
-    --tamanho-texto: clamp(1rem, 3vw, 1.25rem);    /* ~16px a 18px */
-    --tamanho-subtitulo: clamp(1.25rem, 4vw, 1.75rem);    /* ~20px a 28px */
-    --tamanho-titulo: clamp(1.75rem, 6vw, 3rem);    /* ~28px a 48px */
-
-
-
-}
+    --tamanho-texto: clamp(1rem, 3vw, 1.25rem);
+    /* ~16px a 18px */
+    --tamanho-subtitulo: clamp(1.25rem, 4vw, 1.75rem);
+    /* ~20px a 28px */
+    --tamanho-titulo: clamp(1.75rem, 6vw, 3rem);
+    /* ~28px a 48px */
+   }
 
 
 * {
@@ -47,7 +50,7 @@ header>h1 {
     padding-top: 50px;
     font-variant: small-caps;
     font-family: var(--fonte4);
-    font-size:var(--tamanho-titulo);
+    font-size: var(--tamanho-titulo);
 
 
 
@@ -89,11 +92,16 @@ section {
     line-height: 2rem;
     padding-left: 30px;
     font-family: var(--fonte3);
-    font-size:var(--tamanho-texto);
-
-
+    font-size: var(--tamanho-texto);
 
 }
+
+section p {
+
+    padding-bottom: 2rem;
+}
+
+
 
 section.normal {
     background-color: aliceblue;
@@ -102,18 +110,39 @@ section.normal {
 
 section.imagem {
 
-    background-color: rgb(59, 59, 59);
+    background-color: rgb(105, 105, 105);
     color: aliceblue;
+    box-shadow: inset 1px 1px 15px 0px rgba(0, 0, 0, 0.397);
+      background-size: cover;
+      background-attachment: fixed;
 }
 
 section.imagem>p {
     display: inline-block;
 
-    background-color: rgb(44, 43, 43);
+    background-color: rgba(44, 43, 43, 0.288);
+    text-shadow: 1px 1px 0px black;
+
+}
+
+section#img01 {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
   
+
+
+}
+
+section#img02 {
+    background-image: url('../imagens/background002.jpg');
+    background-position: right center;
+  
+
 }
 
 footer {
+   font-family: var(--fonte2);
+   font-size: var(--tamanho-texto);
 
     background-color: black;
     text-align: center;

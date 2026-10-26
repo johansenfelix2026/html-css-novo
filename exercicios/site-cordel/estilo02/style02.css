@@ -65,6 +65,7 @@ section > p {
     max-width: 500px; /* Limita a largura para o poema não ficar "esticado" */
     margin: auto;     /* Centraliza o bloco de texto na tela */
     padding-left: 20px;
+    padding-bottom: 2rem;
 }
 
 /* Secção Normal */
