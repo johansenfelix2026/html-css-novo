@@ -119,6 +119,7 @@ section.imagem {
 
 section.imagem>p {
     display: inline-block;
+    
 
     background-color: rgba(44, 43, 43, 0.288);
     text-shadow: 1px 1px 0px black;
