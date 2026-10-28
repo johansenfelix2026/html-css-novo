@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas com Cores Alternadas</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1rem;
+            padding-left: 20px;
+            font-weight: bolder;
+            
+        }
+
+        table {
+            width: 600px;
+            height: 200px;
+            border: 1px solid rgb(82, 80, 80);
+            border-collapse: collapse; /* Evita linhas duplas nas bordas da tabela */
+
+
+
+
+        }
+
+
+        #escuro {
+            color: rgb(244, 247, 247); /* Cor diferenciada para o primeiro título */
+        }
+
+        th {
+            border: 1px solid black;
+            font-weight: bolder;
+            padding: 10px;
+            text-align: left;
+        }
+
+        tr {
+            border: 1px solid black;
+        }
+
+        tr.titulo {
+            background-color: rgb(121, 120, 120); /* Fundo preto para o cabeçalho */
+            color: rgb(245, 243, 240);
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 2px;
+        }
+        td.cores {
+
+            background-color: chartreuse;
+        }
+
+        /* 
+           O uso do prefixo 'tbody' garante que a contagem (odd/even) 
+           ignore completamente a linha do título que está no 'thead'.
+        */
+
+        /* Aplica a cor Rosa nas linhas ÍMPARES (1ª, 3ª, 5ª...) de dados */
+        tbody tr:nth-child(odd) {
+            background-color: rgb(255, 254, 255); 
+        }
+
+        /* Aplica a cor Azul nas linhas PARES (2ª, 4ª, 6ª...) de dados */
+        tbody tr:nth-child(even) {
+            background-color: rgb(250, 250, 250); 
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <!-- THEAD: Agrupa o cabeçalho da tabela (isolado da contagem de cores) -->
+        <thead>
+            <tr class="titulo">
+                <th id="escuro">Folgas</th>
+                <th>Segunda</th>
+                <th>Terça</th>
+                <th>Quarta</th>
+                <th>Quinta</th>
+                <th>Sexta</th>
+            </tr>
+        </thead>
+
+        <!-- TBODY: Agrupa o corpo dos dados (onde as cores alternadas começam do zero) -->
+        <tbody>
+            <tr>
+                <td class="cores">funcionario</td>
+                <td>A1</td>
+                <td>B1</td>
+                <td>C1</td>
+                <td>D1</td>
+                <td>E1</td>
+            </tr>
+            <tr>
+                <td class="cores">funcionario</td>
+                <td>A2</td>
+                <td>B2</td>
+                <td>C2</td>
+                <td>D2</td>
+                <td>E2</td>
+            </tr>
+            <tr>
+                <td class="cores">funcionario</td>
+                <td>A3</td>
+                <td>B3</td>
+                <td>C3</td>
+                <td>D3</td>
+                <td>E3</td>
+            </tr>
+            <tr>
+                <td class="cores">funcionario</td>
+                <td>A4</td>
+                <td>B4</td>
+                <td>C4</td>
+                <td>D4</td>
+                <td>E4</td>
+            </tr>
+            <tr>
+                <td class="cores">funcionario</td>
+                <td>A5</td>
+                <td>B5</td>
+                <td>C5</td>
+                <td>D5</td>
+                <td>E5</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>

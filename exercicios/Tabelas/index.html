@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha primeira tabela 01</title>
+    <style>
+        body {
+
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            font-size: 1rem;
+            padding-left: 10px;
+        }
+
+        table {
+
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        tr.primeira {
+
+            background-color: aqua;
+        }
+
+         td, th {
+
+            border: 1px solid black;
+            padding-left: 5px;
+            padding: 3px;
+        }
+
+        td.amarelo {
+            color: antiquewhite;
+
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Minha primeira tabela</h1>
+    <table>
+        <!-- 
+      HIERARQUIA DE TABELAS (simples)
+      TABLE = tabela
+          TABLE ROW = linha de tabela
+              TABLE HEADER = cabeçalho de tabela
+              TABLE DATA = dado de tabela
+  -->
+        <tr class="primeira"><!--Primeira linha-->
+            <th>Segunda</th>
+            <th>Terça-Feira de Dezembro</th>
+            <th>Quarta-Feira</th>
+        </tr>
+        <tr>                 <!--Segunda linha-->
+            <td class="amarelo">A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr class="primeira"><!--Terceira linha-->
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+        <tr>                   <!--Quarta linha-->
+            <td class="amarelo">A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+    </table>
+</body>
+
+</html>
