@@ -6,37 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas Grandes</title>
     <style>
-        body > h1{
-            font-family: Arial, Helvetica, sans-serif;
+        caption{
 
-            
-            padding: 5px;
-                        
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding: 10px;
+            background-color: bisque;
         }
-        table{
 
-            width: 500px;
-            height: 75px;
-            text-align: left;
-             border-collapse: collapse;
-           
-        }
-        thead{
-            background-color: chartreuse;
+        body{
 
             font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
-        td, th{
-             border:1px solid black;
-             padding: 10px;
-            
 
+        table{
+
+        
+        padding: 10px;
+        width: 600PX;
+        border-collapse: collapse;
+ 
+        }
+        thead {
+
+            background-color:aqua;
+           
+        }
+        td, th{
+            border: 1px solid black;
+        }
+        td.num{
+            text-align:center;
+            
+        }
+        
+        tfoot{
+
+            background-color: darkgrey;
         }
     </style>
+
 </head>
 
 <body>
     <h1>Uso de tabelas grandes</h1>
+    <!--caption ou legendas-->
+    <!-- 
+      HIERARQUIA DE TABELAS (simples)
+        TABLE = tabela
+        TABLE ROW = linha de tabela
+        TABLE HEADER = cabeçalho de tabela
+        TABLE DATA = dado de tabela
+  -->
     <!--ANATOMIA DAS TABELAS GRANDES
     *THEAD - CABEÇA-----
               [TR, TD TH]
@@ -47,31 +68,49 @@
     
     -->
     <table>
+        <caption>Unidades Federativas</caption>
 
-
-        <thead><!--cabeça-->
-           
-            <th>Estado</th>
-            <th>População</th>
-            <th>Pais</th>
-
+        <thead>
+            <tr>
+                <th scope="col">ESTADOS</th>
+                <th scope="col" style="width: 200px;">POPULAÇÃO EM 2026</th>
+                <th scope="col">REGIÃO</th>
+            </tr>
         </thead>
 
-        <tbody><!--corpo-->
-           
-            <td>São paulo</td>
-            <td>46 179 008 </td>
-            <td>Argentina</td>
-
+        <tbody>
+             <tr>
+                <td>MANAUS</td>
+                <td class="num">89 015 421</td>
+                <td>NORTE</td>
+                
+            </tr>
+            <tr>
+                <td>PARÁ</td>
+                <td class="num">57 366 981</td>
+                <td>NORTE</td>
+            </tr>
+            <tr>
+                <td>SÃO PAULO</td>
+                <td class="num">17 401 676</td>
+                <td>SUL</td>
+            </tr>
         </tbody>
 
-        <tfoot><!--roda pé-->
-          
-            <td>Total</td>
-            <td>214 211 951</td>
-            <td>Turquia</td>
-
+        <tfoot>
+            
+            <tr>
+                <th scope="row">Total</th>
+                <td class="num">214 211 951</td>
+                <td><strong>41,55%</strong></td>
+            </tr>
+            
+            
         </tfoot>
+
+
+
+
 
 
 
