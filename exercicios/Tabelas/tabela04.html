@@ -12,10 +12,16 @@
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             padding: 10px;
         }
+        h1{
+
+            font-size: 1.7rem;
+        }
+                
+       
 
         table {
 
-            width: 600px;
+            width: 500px;
             border-collapse: collapse;
         }
         caption{
@@ -37,7 +43,7 @@
             width: 200px;
             background-color: rgb(236, 238, 234);
         }
-        td.PE{
+        th.PE{
             background-color: chartreuse;
 
             text-align: center;
@@ -58,15 +64,15 @@
         
         <thead>
             <tr>
-                <th>ESTADOS</th>
-                <th>ÁREA</th>
+                <th scope="col">ESTADOS</th>
+                <th scope="col">ÁREA</th>
             </tr>
 
         </thead>
 
         <tbody>
             <tr>
-                <td class="text">Amazonas</td>
+                <td class="text" >Amazonas</td>
                 <td class="num">1.559.146.876 Km<sup>2</sup></td>
                 
             </tr>
@@ -120,7 +126,7 @@
 
         <tfoot>
             <tr>
-                <td  class="PE"><strong>TOTAL</strong></td>
+                <th class="PE" scope="row">TOTAL</th>
                 <td class="num"><strong>000.000.000.000 km<sup>2</sup></strong></td>
             </tr>
 
