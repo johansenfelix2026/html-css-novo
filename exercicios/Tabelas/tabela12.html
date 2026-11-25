@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESTE DE AGRUPAMENTO</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        caption {
+            font-size: 1.2rem;
+            font-weight: bold;
+            background-color: aqua;
+            border: 1px solid black;
+            border-bottom: none; /* Evita borda dupla com a tabela */
+            padding: 10px 0;
+        }
+        table {
+            max-width: 1000px;
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        /* Exemplo de estilização usando as classes do colgroup */
+        .col-area {
+            background-color: #83ee0a;
+        }
+        .col-media {
+            background-color: #0a63e9;
+            font-weight: bold;
+        }
+
+        .col-disciplina{
+
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+
+    
+
+
+    <h1>AGRUPAMENTO DE TABELAS</h1>
+
+    <table>
+
+        
+        <caption>
+            AGRUPAMENTO DE TABELA COM COLGROUP
+        </caption>
+        
+        <!-- Definição das 5 colunas da tabela -->
+        <colgroup>
+            <col class="col-area">
+            <col class="col-disciplina">
+            <col class="col-notas" span="2">
+            <col class="col-media">
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th rowspan="2" scope="col">ÁREA</th>
+                <th rowspan="2" scope="col">DISCIPLINA</th>
+                <th colspan="2" scope="colgroup">NOTA</th>
+                <th rowspan="2" scope="col">MÉDIA</th>
+            </tr>
+            <tr>
+                <th scope="col">NOTA 01</th>
+                <th scope="col">NOTA 02</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="4" scope="rowgroup">EXATAS</th>
+                <td>MATEMÁTICA</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <!-- Linhas extras para completar o rowspan="4" -->
+            <tr>
+                <td>FÍSICA</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>QUÍMICA</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>BIOLOGIA</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

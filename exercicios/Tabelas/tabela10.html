@@ -6,7 +6,7 @@
     <title>EXERCÍCIOS TABELAS</title>
     <style>
       body {
-        font: 1em sans-serif;
+       font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-weight: bolder;
         font-size: 1.2rem;
       }
@@ -18,7 +18,7 @@
         border: 1px solid black;
       }
       table {
-        width: 1000px;
+        max-width: 1000px; width: 100%;
         border-collapse: collapse;
       }
       td,
@@ -47,13 +47,15 @@
       </caption>
       <thead>
         <tr>
-          <th rowspan="2">ÁREA</th>
-          <th rowspan="2">DISCIPLINA</th>
-          <th colspan="2">NOTA</th>
-          <th rowspan="2">MÉDIA</th>
+          <th rowspan="2" scope="col">ÁREA</th>
+          <th rowspan="2" scope="col">DISCIPLINA</th>
+          <th colspan="2" scope="colgroup">NOTA</th>
+          <th rowspan="2" scope="col">MÉDIA</th>
         </tr>
-        <th>NOTA 01</th>
-        <th>NOTA 02</th>
+        <tr>
+            <th scope="col">NOTA 01</th>
+            <th scope="col">NOTA 02</th>
+        </tr>
       </thead>
       <tbody>
         <tr>
@@ -65,7 +67,7 @@
         </tr>
 
         <tr>
-          <td>QUIMICA</td>
+          <td>QUMICA</td>
           <td>0.0</td>
           <td>0.0</td>
           <td>0.0</td>
@@ -86,7 +88,7 @@
         </tr>
 
         <tr>
-          <th colspan="4" class="media">MÉDIAS EXATAS</th>
+          <th colspan="4" class="media" scope="row">MÉDIAS EXATAS</th>
           <th class="media">0.0</th>
         </tr>
 
@@ -108,7 +110,7 @@
 
       <tfoot>
         <tr>
-          <th colspan="4" class="media">MÉDIAS DE HUMANAS</th>
+          <th colspan="4" class="media" scope="row">MÉDIAS DE HUMANAS</th>
           <th class="media">0.0</th>
         </tr>
       </tfoot>

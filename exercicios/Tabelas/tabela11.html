@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+        col.carea{
+
+            background-color: greenyellow;
+        }
+
+        col.cnota{
+            background-color: blanchedalmond;
+        }
+        body{
+            font-weight: bold;
+
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        caption{
+            font-size: 1.2rem;
+            
+
+            background-color: aqua;
+            border: 1px solid black;
+            border-bottom: none;
+            height: 30px;
+            text-align:center;
+            padding-top: 10px;
+        }
+
+        table{
+
+          
+            border-collapse: collapse;
+        }
+          tr:nth-child(even){
+            background-color: cadetblue;
+          }
+      
+
+        td, th{
+            padding: 10px;
+
+            border: 2px solid black;
+        }
+        div#container{
+            overflow-x: auto;
+        }
+    </style>
+    <title>TESTE DE AGRUPAMENTO</title>
+    
+</head>
+<body>
+    <h1>AGRUPAMENTO DE TABELAS</h1>
+    <div id="container">
+        <table>
+        <colgroup>
+            <col class="carea">
+            <col class="cdisciplina">
+            <col class="cnota" span="2">
+            <col class="cmedia">
+        
+        
+        </colgroup>
+        
+        
+        
+        
+        <caption>
+        AGRUPAMENTO DE TABELA COM COLGROUP
+        
+        </caption>
+        
+        <thead>
+        <tr>
+            <th rowspan="2" scope="col">ÁREA</th>
+            <th rowspan="2" scope="col">DISCIPLINA</th>
+            <th colspan="2" scope="colgroup">NOTA</th>
+            <th rowspan="2" scope="col">MÉDIA</th>
+        </tr>
+        
+        <tr>
+            <th scope="col">NOTA 01</th>
+            <th scope="col">NOTA 02</th>
+        </tr>
+        </thead>
+        
+        <tbody>
+        <tr>
+        <th rowspan="4" scope="rowgroup">EXATAS</th>
+        <td>MATEMÁTICA</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        </tr>
+        
+        <tr>
+        
+        <td>QUÍMICA</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        </tr>
+        
+        <tr>
+        
+        <td>FÍSICA</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        </tr>
+        
+        <tr>
+        
+        <td>BIOLOGIA</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        </tr>
+        
+        <tr>
+        
+        <th colspan="4" scope="row">MÉDIAS EXATAS</th>
+        <td>0.0</td>
+        
+        </tr>
+        
+        <tr>
+        <th rowspan="2" scope="rowgroup">HUMANAS</th>
+        <td>HISTÓRIA</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        </tr>
+        
+        
+        <tr>
+        
+        <td>GEOGRAFIA</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        </tr>
+        
+        <tr>
+        
+        <th colspan="4" scope="row">MÉDIAS HUMANAS</th>
+        <td>0.0</td>
+        
+        </tr>
+        
+        </tbody>
+        </table>
+    </div>
+    
+</body>
+</html>
